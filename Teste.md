@@ -1,5 +1,12 @@
 ```mermaid
 classDiagram
+    class iPhone {
+        -modelo: String = "iPhone 2G"
+        -versaoOS: String = "iOS 1.0"
+        -capacidadeArmazenamento: int
+        +ligar()
+        +desligar()
+    }
 
     class ReprodutorMusical {
         -musicaAtual: String
@@ -14,6 +21,7 @@ classDiagram
         -emChamada: boolean
         -numeroChamadaAtual: String
         -duracaoChamada: int
+        -mutado: boolean
         +ligar(numero: String)
         +atender()
         +iniciarCorreioVoz()

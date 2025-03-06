@@ -31,12 +31,13 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), você deve el
 ```mermaid
 classDiagram
     class ReprodutorMusical {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
     }
 
     class AparelhoTelefonico {
-        +exemploMetodo1()
+        +ligar()
         +exemploMetodo2(String exemplo)
     }
 

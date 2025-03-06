@@ -5,8 +5,9 @@ classDiagram
         -reprodutor: ReprodutorMusical
         -telefone: AparelhoTelefonico
         -navegador: NavegadorInternet
-        +ligar()
-        +desligar()
+        +getReprodutor() ReprodutorMusical
+        +getTelefone() AparelhoTelefonico
+        +getNavegador() NavegadorInternet
     }
 
     class ReprodutorMusical {

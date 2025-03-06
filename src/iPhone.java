@@ -1,8 +1,15 @@
 public class iPhone {
     private int armazenamento;
-    private ReprodutorMusical reprodutorMusical;
-    private AparelhoTelefonico aparelhoTelefonico;
-    private NavegadorInternet navegadorInternet;
+    private ReprodutorMusical reprodutor;
+    private AparelhoTelefonico telefone;
+    private NavegadorInternet navegador;
+
+    public iPhone(int armazenamento) {
+        this.armazenamento = armazenamento;
+        this.reprodutor = new ReprodutorMusical();
+        this.telefone = new AparelhoTelefonico();
+        this.navegador = new NavegadorInternet();
+    }
 
     public int getArmazenamento() {
         return armazenamento;
@@ -13,35 +20,38 @@ public class iPhone {
     }
 
     public ReprodutorMusical getReprodutorMusical() {
-        return reprodutorMusical;
+        return reprodutor;
     }
 
     public void setReprodutorMusical(ReprodutorMusical reprodutorMusical) {
-        this.reprodutorMusical = reprodutorMusical;
+        this.reprodutor = reprodutorMusical;
     }
 
     public AparelhoTelefonico getAparelhoTelefonico() {
-        return aparelhoTelefonico;
+        return telefone;
     }
 
     public void setAparelhoTelefonico(AparelhoTelefonico aparelhoTelefonico) {
-        this.aparelhoTelefonico = aparelhoTelefonico;
+        this.telefone = aparelhoTelefonico;
     }
 
     public NavegadorInternet getNavegadorInternet() {
-        return navegadorInternet;
+        return navegador;
     }
 
     public void setNavegadorInternet(NavegadorInternet navegadorInternet) {
-        this.navegadorInternet = navegadorInternet;
+        this.navegador = navegadorInternet;
     }
 
     public void ligar() {
+        System.out.println("iPhone Ligando...");
     }
 
     public void desligar() {
+        System.out.println("iPhone Desligando...");
     }
 
-    public void bloquearTela() {
+    public String bloquearTela() {
+        return "Deslize para desbloquear";
     }
 }

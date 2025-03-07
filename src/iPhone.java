@@ -7,7 +7,7 @@ public class iPhone {
     public iPhone(int armazenamento) {
         this.armazenamento = armazenamento;
         this.reprodutor = new ReprodutorMusical();
-        this.telefone = new AparelhoTelefonico(false, null, armazenamento);
+        this.telefone = new AparelhoTelefonico();
         this.navegador = new NavegadorInternet();
     }
 

@@ -8,16 +8,18 @@ public class NavegadorInternet {
         this.abasAbertas = abasAbertas;
         this.carregando = carregando;
     }
+    public NavegadorInternet(){}
 
     public void exibirPagina(String url) {
         setPaginaAtual(url);
         setCarregando(true);
-        System.out.println(getPaginaAtual());
+        System.out.println("Exibindo " + getPaginaAtual());
         setCarregando(false);
     }
 
     public void adicionarNovaAba() {
         setAbasAbertas(getAbasAbertas()+1);
+        System.out.println("Uma nova aba foi aberta. Total: " + getAbasAbertas());
     }
 
     public void atualizarPagina() {

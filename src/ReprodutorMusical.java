@@ -9,13 +9,14 @@ public class ReprodutorMusical {
     }
 
     public void pausar() {
-        System.out.println("Pausando" + musicaAtual + "...");
+        System.out.println("Pausando " + musicaAtual + "...");
         setEmReproducao(false);
         setVolume(0);
     }
 
     public void selecionarMusica(String musica) {
         setMusicaAtual(musica);
+        System.out.println("Música selecionada: " + musica);
     }
 
     public String getMusicaAtual() {

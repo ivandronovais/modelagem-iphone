@@ -2,7 +2,7 @@ public class NavegadorInternet {
     private String paginaAtual;
     private int abasAbertas;
     private boolean carregando;
-    
+
     public NavegadorInternet(String paginaAtual, int abasAbertas, boolean carregando) {
         this.paginaAtual = paginaAtual;
         this.abasAbertas = abasAbertas;
@@ -10,15 +10,20 @@ public class NavegadorInternet {
     }
 
     public void exibirPagina(String url) {
-
+        setPaginaAtual(url);
+        setCarregando(true);
+        System.out.println(getPaginaAtual());
+        setCarregando(false);
     }
 
     public void adicionarNovaAba() {
-
+        setAbasAbertas(getAbasAbertas()+1);
     }
 
     public void atualizarPagina() {
-
+        setCarregando(true);
+        System.out.println(getPaginaAtual());
+        setCarregando(false);
     }
 
     public String getPaginaAtual() {

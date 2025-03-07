@@ -13,11 +13,13 @@ public class AparelhoTelefonico {
 
     public AparelhoTelefonico() {
     }
-
     public void ligar(String numero) {
-        System.out.println("Ligando para " + numero);
         setEmChamada(true);
-
+        setNumeroChamadaAtual(numero);
+        System.out.println("Ligando para " + numero);
+    }
+    public void iniciarCorreioVoz(){
+        System.out.println("Correio de voz iniciado...");
     }
     public void atender(){
         setEmChamada(true);

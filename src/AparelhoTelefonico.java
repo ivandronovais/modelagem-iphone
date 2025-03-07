@@ -2,6 +2,7 @@ public class AparelhoTelefonico {
     private boolean emChamada;
     private String numeroChamadaAtual;
     private int duracaoChamada;
+    private boolean mutado;
 
     public AparelhoTelefonico(boolean emChamada, String numeroChamadaAtual, int duracaoChamada) {
         this.emChamada = emChamada;
@@ -10,6 +11,17 @@ public class AparelhoTelefonico {
         this.mutado = false;
     }
 
+    public AparelhoTelefonico() {
+    }
+
+    public void ligar(String numero) {
+        System.out.println("Ligando para " + numero);
+        setEmChamada(true);
+
+    }
+    public void atender(){
+        setEmChamada(true);
+    }
     public boolean isEmChamada() {
         return emChamada;
     }
@@ -17,6 +29,7 @@ public class AparelhoTelefonico {
     public void setEmChamada(boolean emChamada) {
         this.emChamada = emChamada;
     }
+
 
     public String getNumeroChamadaAtual() {
         return numeroChamadaAtual;
@@ -40,12 +53,5 @@ public class AparelhoTelefonico {
 
     public void setMutado(boolean mutado) {
         this.mutado = mutado;
-    }
-
-    private boolean mutado;
-
-    public void ligar(String numero) {
-        System.out.println("Ligando para " + numero);
-
     }
 }

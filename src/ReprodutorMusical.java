@@ -15,6 +15,7 @@ public class ReprodutorMusical {
     }
 
     public void selecionarMusica(String musica) {
+        setMusicaAtual(musica);
     }
 
     public String getMusicaAtual() {
